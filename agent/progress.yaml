@@ -28,12 +28,12 @@ milestones:
   
   - id: M2
     name: Command & Design Documentation
-    status: not_started
-    progress: 0
-    started: null
+    status: in_progress
+    progress: 50
+    started: 2026-02-22
     completed: null
     estimated_weeks: 1-2
-    tasks_completed: 0
+    tasks_completed: 2
     tasks_total: 4
     notes: |
       Create command workflows for project scaffolding and architectural design documents.
@@ -147,21 +147,25 @@ tasks:
   milestone_2:
     - id: task-9
       name: Create init Command
-      status: not_started
+      status: completed
       file: agent/tasks/milestone-2-command-design-documentation/task-9-init-command.md
       estimated_hours: 3-4
-      actual_hours: null
-      completed_date: null
-      notes: Command workflow for initializing new MCP server projects
+      actual_hours: 2
+      completed_date: 2026-02-22
+      notes: |
+        Created comprehensive init command with 17 detailed steps.
+        Includes complete file templates, verification checklist, and troubleshooting.
     
     - id: task-10
       name: Create add-tool Command
-      status: not_started
+      status: completed
       file: agent/tasks/milestone-2-command-design-documentation/task-10-add-tool-command.md
       estimated_hours: 2-3
-      actual_hours: null
-      completed_date: null
-      notes: Command workflow for generating tool scaffolding
+      actual_hours: 1
+      completed_date: 2026-02-22
+      notes: |
+        Created comprehensive add-tool command with 8 detailed steps.
+        Includes tool template, test generation, server registration, and verification.
     
     - id: task-11
       name: Create Architecture Design Document
@@ -214,15 +218,15 @@ documentation:
   milestone_documents: 3
   pattern_documents: 7
   task_documents: 15
-  command_documents: 0
+  command_documents: 2
   last_updated: 2026-02-22
 
 progress:
   planning: 100
-  implementation: 50
+  implementation: 57
   testing: 0
-  documentation: 60
-  overall: 50
+  documentation: 67
+  overall: 57
 
 recent_work:
   - date: 2026-02-22
@@ -290,11 +294,47 @@ recent_work:
       - ✅ All patterns include complete code examples
       - ✅ All patterns document anti-patterns and troubleshooting
       - ✅ M1: 100% complete (7/7 tasks, completed in 1 session!)
+  
+  - date: 2026-02-22
+    description: |
+      🚀 @acp.resume Executed: Context Loaded & Task 9 Complete
+      Resumed work via @acp.resume command, loaded context, and completed init command.
+    items:
+      - ✅ Executed @acp.resume workflow (3-step process)
+      - ✅ Checked for ACP updates (v3.9.1 available, not critical)
+      - ✅ Read latest session report (report-2026-02-22.md)
+      - ✅ Reviewed M1 completion (7 patterns, 100% done)
+      - ✅ Identified next task: Task 9 - Create init Command
+      - ✅ Read task document and related patterns
+      - ✅ Created agent/commands/mcp-server-starter.init.md (700+ lines)
+      - ✅ Documented 17 detailed steps for project initialization
+      - ✅ Included complete file templates and examples
+      - ✅ Added verification checklist and troubleshooting
+      - ✅ Updated package.yaml with command entry
+      - ✅ Task 9 completed successfully
+      - ✅ M2 progress: 25% (1/4 tasks complete)
+  
+  - date: 2026-02-22
+    description: |
+      ✅ Task 10 Complete: add-tool Command Created
+      Implemented comprehensive command for generating MCP tool scaffolding.
+    items:
+      - ✅ Read task document and tool creation pattern
+      - ✅ Created agent/commands/mcp-server-starter.add-tool.md (650+ lines)
+      - ✅ Documented 8 detailed steps for tool generation
+      - ✅ Included complete tool template with TypeScript interfaces
+      - ✅ Added server registration steps (standalone + factory)
+      - ✅ Included test file generation template
+      - ✅ Added 5 usage examples (interactive, explicit, complete, no-test, natural language)
+      - ✅ Documented 5 troubleshooting scenarios
+      - ✅ Updated package.yaml with command entry
+      - ✅ Task 10 completed successfully
+      - ✅ M2 progress: 50% (2/4 tasks complete)
 
 next_steps:
-  - Start Milestone 2: Command & Design Documentation (Tasks 9-12)
-  - Next: Task 9 - Create init-project Command
-  - Use @acp.proceed to continue with M2
+  - Continue Milestone 2: Command & Design Documentation (Tasks 11-12)
+  - Next: Task 11 - Create Architecture Design Document
+  - Use @acp.proceed to continue with design documents
   - Validate package with @acp.package-validate
   - Commit M1 completion with @git.commit
 
