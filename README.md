@@ -38,24 +38,63 @@ Or using the installation script:
 <!-- ACP_AUTO_UPDATE_START:CONTENTS -->
 ### Commands
 
-(No commands yet - use @acp.command-create to add commands)
+- **[`@mcp-server-starter.init`](agent/commands/mcp-server-starter.init.md)** - Initialize new MCP server project with complete setup
+- **[`@mcp-server-starter.add-tool`](agent/commands/mcp-server-starter.add-tool.md)** - Generate new tool scaffolding with tests and registration
 
 ### Patterns
 
-(No patterns yet - use @acp.pattern-create to add patterns)
+- **[`mcp-server-starter.bootstrap`](agent/patterns/mcp-server-starter.bootstrap.md)** - Project initialization and directory structure
+- **[`mcp-server-starter.server-standalone`](agent/patterns/mcp-server-starter.server-standalone.md)** - Basic MCP server with stdio transport
+- **[`mcp-server-starter.server-factory`](agent/patterns/mcp-server-starter.server-factory.md)** - Multi-tenant server with mcp-auth integration
+- **[`mcp-server-starter.tool-creation`](agent/patterns/mcp-server-starter.tool-creation.md)** - MCP tool definition and implementation
+- **[`mcp-server-starter.build-config`](agent/patterns/mcp-server-starter.build-config.md)** - esbuild configuration for dual builds
+- **[`mcp-server-starter.test-config`](agent/patterns/mcp-server-starter.test-config.md)** - Jest configuration for TypeScript + ESM
+- **[`mcp-server-starter.config-management`](agent/patterns/mcp-server-starter.config-management.md)** - Environment variable and configuration management
 
 ### Designs
 
-(No designs yet - use @acp.design-create to add designs)
+- **[`mcp-server-starter.architecture`](agent/design/mcp-server-starter.architecture.md)** - Overall MCP server architecture and dual export pattern
+- **[`mcp-server-starter.mcp-auth-integration`](agent/design/mcp-server-starter.mcp-auth-integration.md)** - Multi-tenant deployment with mcp-auth authentication
 <!-- ACP_AUTO_UPDATE_END:CONTENTS -->
 
 ## Why Use This Package
 
-(Add benefits and use cases here)
+This package provides everything you need to build production-ready MCP servers:
+
+- **Complete Patterns**: 7 comprehensive patterns covering the entire development lifecycle
+- **Automated Commands**: 2 commands to scaffold projects and generate tools
+- **Architecture Guidance**: 2 design documents explaining when and how to use each pattern
+- **Production Ready**: Includes multi-tenant support via mcp-auth
+- **Type Safe**: Full TypeScript support with strict typing
+- **Well Documented**: Every pattern includes complete code examples and anti-patterns
 
 ## Usage
 
-(Add usage examples here)
+### Initialize a New MCP Server Project
+
+```bash
+@mcp-server-starter.init
+```
+
+This creates a complete MCP server project with:
+- TypeScript configuration
+- Dual export pattern (standalone + factory)
+- Example hello_computer tool
+- Build and test configuration
+- Git repository initialization
+
+### Add a New Tool
+
+```bash
+@mcp-server-starter.add-tool --name search_documents
+```
+
+This generates:
+- Tool definition with schema
+- TypeScript interfaces
+- Handler function template
+- Test file
+- Automatic server registration
 
 ## Development
 
