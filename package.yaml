@@ -16,7 +16,34 @@ release:
 # Use @acp.pattern-create, @acp.command-create, @acp.design-create
 # These commands automatically update this section
 contents:
-  patterns: []
+  patterns:
+    - name: bootstrap
+      file: mcp-server-starter.bootstrap.md
+      description: Project initialization and directory structure
+    
+    - name: server-standalone
+      file: mcp-server-starter.server-standalone.md
+      description: Basic MCP server with stdio transport
+    
+    - name: server-factory
+      file: mcp-server-starter.server-factory.md
+      description: Multi-tenant server with mcp-auth integration
+    
+    - name: tool-creation
+      file: mcp-server-starter.tool-creation.md
+      description: MCP tool definition and implementation
+    
+    - name: build-config
+      file: mcp-server-starter.build-config.md
+      description: esbuild configuration for dual builds
+    
+    - name: test-config
+      file: mcp-server-starter.test-config.md
+      description: Jest configuration for TypeScript + ESM
+    
+    - name: config-management
+      file: mcp-server-starter.config-management.md
+      description: Environment variable and configuration management
   
   commands: []
   
