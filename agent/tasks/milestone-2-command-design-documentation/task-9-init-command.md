@@ -1,4 +1,4 @@
-# Task 9: Create init-project Command
+# Task 9: Create init Command
 
 **Milestone**: M2 - Command & Design Documentation
 **Estimated Time**: 3-4 hours
@@ -9,13 +9,13 @@
 
 ## Objective
 
-Create the init-project command document that provides a workflow for initializing a new MCP server project with all necessary files and configuration.
+Create the init command document that provides a workflow for initializing a new MCP server project with all necessary files and configuration.
 
 ---
 
 ## Context
 
-The init-project command automates project scaffolding by:
+The init command automates project scaffolding by:
 - Creating directory structure
 - Generating configuration files
 - Installing dependencies
@@ -37,7 +37,7 @@ Read these patterns for context:
 
 ### 2. Create Command Document
 
-Create `agent/commands/mcp-server-starter.init-project.md` using the command template.
+Create `agent/commands/mcp-server-starter.init.md` using the command template.
 
 **Sections to Include**:
 - **Purpose**: Initialize new MCP server project
@@ -106,12 +106,12 @@ Include templates for all generated files (or reference patterns).
 
 Show how users invoke the command:
 ```bash
-@mcp-server-starter.init-project
+@mcp-server-starter.init
 ```
 
 Or with arguments:
 ```bash
-@mcp-server-starter.init-project --name my-server --author "John Doe"
+@mcp-server-starter.init --name my-server --author "John Doe"
 ```
 
 ### 6. Update package.yaml
@@ -120,8 +120,8 @@ Add command to contents.commands array:
 ```yaml
 contents:
   commands:
-    - name: init-project
-      file: mcp-server-starter.init-project.md
+    - name: init
+      file: mcp-server-starter.init.md
       description: Initialize new MCP server project
 ```
 
@@ -142,7 +142,7 @@ contents:
 ## Deliverables
 
 ### Files Created
-- `agent/commands/mcp-server-starter.init-project.md`
+- `agent/commands/mcp-server-starter.init.md`
 
 ### Files Modified
 - `package.yaml`

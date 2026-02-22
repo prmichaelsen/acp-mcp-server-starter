@@ -146,9 +146,9 @@ tasks:
   
   milestone_2:
     - id: task-9
-      name: Create init-project Command
+      name: Create init Command
       status: not_started
-      file: agent/tasks/milestone-2-command-design-documentation/task-9-init-project-command.md
+      file: agent/tasks/milestone-2-command-design-documentation/task-9-init-command.md
       estimated_hours: 3-4
       actual_hours: null
       completed_date: null
