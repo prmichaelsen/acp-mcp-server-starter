@@ -5,6 +5,26 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-02-22
+
+### Added
+- **Architecture Design Document** (`mcp-server-starter.architecture.md`) - Comprehensive architecture guide
+  - Dual export pattern explained with diagrams
+  - Component relationships and data flows
+  - Decision records for key architectural choices
+  - When to use each pattern
+  - Migration paths from single entry point
+- **mcp-auth Integration Design** (`mcp-server-starter.mcp-auth-integration.md`) - Multi-tenancy guide
+  - Authentication flow with detailed diagrams
+  - User isolation strategy and implementation
+  - Complete integration example with code
+  - Factory function contract specification
+  - When to use mcp-auth vs standalone
+
+### Changed
+- Updated package.yaml with 2 design documents
+- Updated progress tracking: Milestone 2 now 100% complete (4/4 tasks)
+
 ## [1.1.0] - 2026-02-22
 
 ### Added

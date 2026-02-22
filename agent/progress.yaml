@@ -28,12 +28,12 @@ milestones:
   
   - id: M2
     name: Command & Design Documentation
-    status: in_progress
-    progress: 50
+    status: completed
+    progress: 100
     started: 2026-02-22
-    completed: null
+    completed: 2026-02-22
     estimated_weeks: 1-2
-    tasks_completed: 2
+    tasks_completed: 4
     tasks_total: 4
     notes: |
       Create command workflows for project scaffolding and architectural design documents.
@@ -169,21 +169,25 @@ tasks:
     
     - id: task-11
       name: Create Architecture Design Document
-      status: not_started
+      status: completed
       file: agent/tasks/milestone-2-command-design-documentation/task-11-architecture-design.md
       estimated_hours: 2-3
-      actual_hours: null
-      completed_date: null
-      notes: Overall architecture and dual export pattern design
+      actual_hours: 1
+      completed_date: 2026-02-22
+      notes: |
+        Created comprehensive architecture design document (800+ lines).
+        Includes dual export pattern, component relationships, and decision records.
     
     - id: task-12
       name: Create mcp-auth Integration Design Document
-      status: not_started
+      status: completed
       file: agent/tasks/milestone-2-command-design-documentation/task-12-mcp-auth-integration-design.md
       estimated_hours: 2-3
-      actual_hours: null
-      completed_date: null
-      notes: Multi-tenancy and authentication design
+      actual_hours: 1
+      completed_date: 2026-02-22
+      notes: |
+        Created comprehensive mcp-auth integration design (700+ lines).
+        Includes authentication flow, user isolation, and complete integration example.
   
   milestone_3:
     - id: task-13
@@ -214,7 +218,7 @@ tasks:
       notes: Release v1.0.0 with changelog and git tags
 
 documentation:
-  design_documents: 1
+  design_documents: 3
   milestone_documents: 3
   pattern_documents: 7
   task_documents: 15
@@ -223,10 +227,10 @@ documentation:
 
 progress:
   planning: 100
-  implementation: 57
+  implementation: 67
   testing: 0
-  documentation: 67
-  overall: 57
+  documentation: 87
+  overall: 67
 
 recent_work:
   - date: 2026-02-22
@@ -330,11 +334,30 @@ recent_work:
       - ✅ Updated package.yaml with command entry
       - ✅ Task 10 completed successfully
       - ✅ M2 progress: 50% (2/4 tasks complete)
+  
+  - date: 2026-02-22
+    description: |
+      🎉 Milestone 2 Complete: All Commands & Designs Documented
+      Completed Tasks 11-12 in batch mode, finishing M2 at 100%.
+    items:
+      - ✅ Task 11: Created architecture design document (800+ lines)
+      - ✅ Documented dual export pattern with complete diagrams
+      - ✅ Explained component relationships and data flows
+      - ✅ Added decision records for key architectural choices
+      - ✅ Task 12: Created mcp-auth integration design (700+ lines)
+      - ✅ Documented authentication flow with detailed diagrams
+      - ✅ Explained user isolation strategy and factory contract
+      - ✅ Added complete integration example with code
+      - ✅ Updated package.yaml with 2 design documents
+      - ✅ M2: 100% complete (4/4 tasks, completed in 1 session!)
+      - ✅ Total documentation: 2 commands + 2 designs (~3,000 lines)
 
 next_steps:
-  - Continue Milestone 2: Command & Design Documentation (Tasks 11-12)
-  - Next: Task 11 - Create Architecture Design Document
-  - Use @acp.proceed to continue with design documents
+  - Start Milestone 3: Package Validation & Publishing (Tasks 13-15)
+  - Next: Task 13 - Build Example Starter Template (optional)
+  - Or skip to Task 14 - Validate Package and Test Installation
+  - Use @acp.proceed to continue with M3
+  - Commit M2 completion with @git.commit
   - Validate package with @acp.package-validate
   - Commit M1 completion with @git.commit
 

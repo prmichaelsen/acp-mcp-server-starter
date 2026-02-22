@@ -1,6 +1,6 @@
 # package.yaml
 name: mcp-server-starter
-version: 1.1.0
+version: 1.2.0
 description: TypeScript MCP server starter template with mcp-auth support and example tool
 author: Patrick Michaelsen
 license: MIT
@@ -54,7 +54,14 @@ contents:
       file: mcp-server-starter.add-tool.md
       description: Generate new tool scaffolding with tests and registration
   
-  designs: []
+  designs:
+    - name: architecture
+      file: mcp-server-starter.architecture.md
+      description: Overall MCP server architecture and dual export pattern
+    
+    - name: mcp-auth-integration
+      file: mcp-server-starter.mcp-auth-integration.md
+      description: Multi-tenant deployment with mcp-auth authentication
 
 # Compatibility
 requires:
