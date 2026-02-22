@@ -1,0 +1,37 @@
+# package.yaml
+name: mcp-server-starter
+version: 1.0.0
+description: TypeScript MCP server starter template with mcp-auth support and example tool
+author: Patrick Michaelsen
+license: MIT
+homepage: https://github.com/prmichaelsen/acp-mcp-server-starter
+repository: https://github.com/prmichaelsen/acp-mcp-server-starter.git
+
+# Release configuration
+release:
+  branch: main
+
+# Package contents
+# Add files here as you create them
+# Use @acp.pattern-create, @acp.command-create, @acp.design-create
+# These commands automatically update this section
+contents:
+  patterns: []
+  
+  commands: []
+  
+  designs: []
+
+# Compatibility
+requires:
+  acp: >=2.8.0
+
+# Tags for discovery
+tags:
+  - mcp
+  - model-context-protocol
+  - typescript
+  - server
+  - starter
+  - template
+  - mcp-auth
